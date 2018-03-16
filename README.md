@@ -1,2 +1,4 @@
 # dev-landing
-landing page for strategic machines, targeted at developers
+This site is still under development.
+
+Not to be used or cloned (yet).
