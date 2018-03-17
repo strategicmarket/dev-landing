@@ -1,25 +1,18 @@
-.App {
- height: 100%;
+/* GLOBAL STYLES */
+body {
+  background: #fff;
+  color: #222;
 }
+/* ================== */
 
-.jumbotron {
-  background: url('./assets/banner4.jpeg');
-  background-size: cover;
-  height: 100vh;
-}
-
-/* SHOWCASE */
+/* LANDING */
 
 .wrapper {
-  /* margin-left: -1000px;
-  margin-top: -300px; */
-  flex: .55;
-  align-self: baseline;
-  padding: 140px;
+  
 }
 
 #showcase {
-  background-image: url('./assets/banner4.jpeg');
+  background-image: url('./assets/banner.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -33,7 +26,7 @@
 
 #showcase h1 {
   font-size: 65px;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #eee;;
 }
 
@@ -50,7 +43,7 @@
   border: #007bff 1px solid;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #showcase .button:hover {
@@ -60,32 +53,63 @@
 }
 
 
-/* ==================== */
-/* SIDEBAR */
+
+
+
+/* ================== */
+
+/* DOCUMENTATION */
+
 #documentation {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  height: 100vh;
+}
+
+#brand {
+  display: flex;
+  background: #333;
+  display: inline-block;
+  height: 65px;
+  width: 100%;
+  flex-basis: 100%;
+  color: #fff;
+  font-size: 35px;
+  align-items: center;
 }
 
 #sidebar {
-  grid-column: 1 / 3;
-  background: #444;
-  /* min-width: 20%;
-  max-width: 20%; */
-  padding: 15px;
-  height: 100vh;
+  /* background: linear-gradient(to bottom, #202020 0%, #282828 100%); */
+  width: 15%;
+  min-width: 15%;
+  padding: 8px;
   overflow-y: scroll;
-  position: fixed;
 }
 
-#sidebar .heading {
-  font-size: 20px;
-  color: #eee;
+#sidebar ul {
+  margin-top: 20px;
+  margin-left: -30px;
 }
 
-/* ==================== */
-/* Content */
+#sidebar ul li {
+  line-height: 1.5;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
 
 #content {
-  grid-column: 3 / -1;
+  /* background: #eee; */
+  width: 100%;
+  padding: 25px;
+  line-height: 1.5;
+  padding-left: 75px;
+  overflow-y: scroll;
 }
+
+/* ================== */
