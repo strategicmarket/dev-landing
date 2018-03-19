@@ -28,10 +28,4 @@ const Sidebar = () => (
   </aside>
 );
 
-{/* <li>
-  <Link to="/docs/unique-route-name">
-    List Item Title
-  </Link>
-</li> */}
-
 export default Sidebar;

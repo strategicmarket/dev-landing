@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 body {
-  background: #fff;
+  /* background: #fff; */
   color: #222;
 }
 /* ================== */
@@ -10,6 +10,14 @@ body {
 .wrapper {
   
 }
+
+/* .language-js {
+  background: #333;
+  color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+} */
 
 #showcase {
   background-image: url('./assets/banner.jpeg');

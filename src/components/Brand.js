@@ -5,7 +5,7 @@ const Brand = () => (
   <nav id="brand">
     <div id="logo">
       <Link to="/">
-        <i class="fas fa-cogs"></i> Strategic Machines
+        <i className="fas fa-cogs"></i> Strategic Machines
       </Link>
     </div>
   </nav>
