@@ -2,7 +2,9 @@ import React from 'react';
 
 const Brand = () => (
   <nav id="brand">
-    <i class="fas fa-cogs"></i> Strategic Machines
+    <div id="logo">
+      <i class="fas fa-cogs"></i> Strategic Machines
+    </div>
   </nav>
 );
 
