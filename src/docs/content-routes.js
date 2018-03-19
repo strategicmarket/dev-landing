@@ -16,7 +16,7 @@ import HowToContribute from './how-to-contribute.md';
 
 const root = '/docs';
 
-export default [
+const routes = [
   {
     path: `${root}`,
     exact: true,
@@ -30,4 +30,6 @@ export default [
     path: `${root}/how-to-contribute`,
     main: () => <Content mdfPath={HowToContribute} />
   }
-]
+];
+
+export default routes;

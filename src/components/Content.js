@@ -30,12 +30,14 @@ export default class Content extends Component {
       .then(content => {
         this.setState({ content })
       })
-    }
+  }
 
   render() {
     return(
       <div>
-       <MarkdownRenderer markdown={this.state.content}/>
+        <MarkdownRenderer
+          markdown={this.state.content}
+        />
       </div>
     )
   }
