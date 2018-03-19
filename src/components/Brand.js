@@ -1,8 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Brand = () => (
   <nav id="brand">
-    <i class="fas fa-cogs"></i> Strategic Machines
+    <div id="logo">
+      <Link to="/">
+        <i class="fas fa-cogs"></i> Strategic Machines
+      </Link>
+    </div>
   </nav>
 );
 

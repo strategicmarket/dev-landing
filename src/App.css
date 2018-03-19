@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   padding: 0 20px;
 }
 
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   color: #eee;
   background: #007bff;
-  border: #007bff 1px solid;
+  /* border: #007bff 1px solid; */
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 50px;
@@ -53,36 +53,48 @@ body {
 }
 
 
-
-
-
 /* ================== */
 
 /* DOCUMENTATION */
 
 #documentation {
-  display: flex;
-  height: 100vh;
+  /* display: flex; */
+  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 
+    "n n n n n n n n n n n n"
+    "s s c c c c c c c c c c"
+  ;
 }
 
 #brand {
+  grid-area: n;
   display: flex;
-  background: #333;
-  display: inline-block;
+  /* background: #333; */
+  background: linear-gradient(to right, #202020 0%, #282828 100%);
   height: 65px;
-  width: 100%;
-  flex-basis: 100%;
   color: #fff;
   font-size: 35px;
-  align-items: center;
+  /* position: fixed; */
+}
+
+#brand #logo {
+  padding: 10px;
+  user-select: none;
+}
+
+#brand #logo a {
+  color: inherit;
+  font-size: 30px;
 }
 
 #sidebar {
-  /* background: linear-gradient(to bottom, #202020 0%, #282828 100%); */
-  width: 15%;
-  min-width: 15%;
   padding: 8px;
   overflow-y: scroll;
+  /* overflow: auto; */
+  grid-area: s;
+  height: 100vh;
 }
 
 #sidebar ul {
@@ -105,11 +117,12 @@ a {
 
 #content {
   /* background: #eee; */
+  grid-area: c;
   width: 100%;
   padding: 25px;
   line-height: 1.5;
   padding-left: 75px;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 /* ================== */
