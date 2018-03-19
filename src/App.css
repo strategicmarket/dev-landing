@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   padding: 0 20px;
 }
 
@@ -76,11 +76,17 @@ body {
   height: 65px;
   color: #fff;
   font-size: 35px;
+  /* position: fixed; */
 }
 
 #brand #logo {
   padding: 10px;
   user-select: none;
+}
+
+#brand #logo a {
+  color: inherit;
+  font-size: 30px;
 }
 
 #sidebar {
@@ -116,7 +122,7 @@ a {
   padding: 25px;
   line-height: 1.5;
   padding-left: 75px;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 /* ================== */
