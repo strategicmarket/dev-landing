@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   color: #eee;
   background: #007bff;
-  border: #007bff 1px solid;
+  /* border: #007bff 1px solid; */
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 50px;
