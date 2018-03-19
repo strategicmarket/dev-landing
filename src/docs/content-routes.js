@@ -14,18 +14,20 @@ import WhatIs from './what-is-strategic-machines.md';
 import WhyContribute from './why-contribute.md';
 import HowToContribute from './how-to-contribute.md';
 
+const root = '/docs';
+
 export default [
   {
-    path: "/docs",
+    path: `${root}`,
     exact: true,
     main: () => <Content mdfPath={WhatIs} />
   },
   {
-    path: "/docs/why-contribute",
+    path: `${root}/why-contribute`,
     main: () => <Content mdfPath={WhyContribute} />
   },
   {
-    path: "/docs/how-to-contribute",
+    path: `${root}/how-to-contribute`,
     main: () => <Content mdfPath={HowToContribute} />
   }
 ]
